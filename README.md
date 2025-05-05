@@ -31,9 +31,10 @@ mysql -uroot -p disks
 SHOW tables;
 ```
 
-
-
-*TODO* document how to create the `disks-mysqldump.sql` back-up.
+Backing up the database to a file:
+```shell
+mysqldump -u root -p disks > disks-dump.sql
+```
 
 ## Sample Queries
 Connect to the database (as above).
