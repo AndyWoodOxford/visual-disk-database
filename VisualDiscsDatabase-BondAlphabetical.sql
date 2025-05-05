@@ -261,6 +261,7 @@ CALL disks.create_disk('James Bond - Casino Royale', 'James Bond - Casino Royale
 CALL disks.create_disk('James Bond - Quantum of Solace', 'James Bond - Quantum of Solace', 'Marc Foster', 2008, 1, 'Film', '15', 'Blu-Ray');
 CALL disks.create_disk('James Bond - Skyfall', 'James Bond - Skyfall', 'Sam Mendes', 2012, 1, 'Film', '15', 'Blu-Ray');
 CALL disks.create_disk('James Bond - Spectre', 'James Bond - Spectre', 'Sam Mendes', 2015, 1, 'Film', '15', 'Blu-Ray');
+CALL disks.create_disk('James Bond - No Time To Die', 'James Bond - No Time To Die', 'Cary Joji Fukunaga', 2021, 1, 'Film', '12', 'Blu-Ray');
 CALL disks.create_disk('James Bond - Never Say Never Again', 'James Bond - Never Say Never Again', 'Irvin Kershner', 1983, 1, 'Film', '12', 'DVD');
 CALL disks.create_disk('Jurassic Park', 'Jurassic Park 1', 'Steven Spielberg', 1993, 1, 'Film', 'PG', 'Blu-Ray');
 CALL disks.create_disk('The Lost World: Jurassic Park', 'Jurassic Park 2', 'Steven Spielberg', 1997, 1, 'Film', 'PG', 'Blu-Ray');
