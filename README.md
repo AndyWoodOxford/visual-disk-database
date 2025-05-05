@@ -1,5 +1,5 @@
 # visual-disk-database
-A `mySQL` database that describes my DVD and BluRay collection.
+A MySQL database that describes my DVD and BluRay collection.
 
 ## Setting up the Database
 
@@ -13,11 +13,6 @@ brew install mysql
 Set a root password (as well as other security steps):
 ```shell
 mysql_secure_installation
-```
-
-To connect with a password prompt:
-```shell
-mysql -u root -p
 ```
 
 Create the schema:
@@ -34,7 +29,7 @@ mysqldump -u root -p disks > disks-dump.sql
 
 Connect to the database and view the tables:
 ```shell
-mysql -uroot -p disks
+mysql -u root -p disks
 SHOW tables;
 ```
 
@@ -58,21 +53,22 @@ mysql> SELECT disks.title AS Title, disks.year AS Year, formats.name AS Format
 ```
 
 ## Appendix - Reset the Root Password
-**TODO** these commands seem to be out-of-date, fix me!
 
 ```shell
+# Stop server, start in safe mode and connect
 brew services stop mysql
-sudo mysqld_safe --skip-grant-tables &
-mysql> UPDATE mysql.user SET authentication_string=null WHERE User='root';
+mysqld_safe --skip-grant-tables &
+mysql -uroot
+
+# Now connected - set a new password
 mysql> FLUSH PRIVILEGES;
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_PASSWORD';
+mysql> \q
+
+# Restart and connect
+brew services restart mysql
+mysql -u root -p
 ```
-
-Quit and resume.
-
-```shell
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'NEW_PASSWORD';
-```
-
 
 ## Appendix - James Bond Films
 The James Bond files are ordered chronologically. Use these commands if an alphabetical ordering is preferred.
