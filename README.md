@@ -1,21 +1,77 @@
 # visual-disk-database
 A `mySQL` database that describes my DVD and BluRay collection.
 
-This code was developed on MacOs.
+## Setting up the Database
 
-## Initialising the Database
+[Homebrew](https://brew.sh/) is used to manage MySQL on macOS.
 
-In case of root password loss:
+Install MySQL:
+```shell
+brew install mysql
+```
+
+Set a root password (as well as other security steps):
+```shell
+mysql_secure_installation
+```
+
+To connect with a password prompt:
+```shell
+mysql -u root -p
+```
+
+Create the schema:
+```shell
+mysql -uroot -p < VisualDiscsDatabase.sql
+```
+
+Connect to the database and view the tables:
+```shell
+mysql -uroot -p disks
+SHOW tables;
+```
+
+
+
+*TODO* document how to create the `disks-mysqldump.sql` back-up.
+
+## Sample Queries
+Connect to the database (as above).
+
+Summary of the entire collection (title, year, rating, format):
+```shell
+mysql> SELECT disks.title AS Title, disks.year AS Year, classifications.name AS Rating, formats.name AS Format
+    -> FROM disks
+    -> INNER JOIN disk_classifications ON disks.id = disk_classifications.disk_id
+    -> INNER JOIN classifications ON disk_classifications.classification_id = classifications.id
+    -> INNER JOIN disk_formats ON disks.id = disk_formats.disk_id INNER JOIN formats ON disk_formats.format_id = formats.id
+    -> ORDER BY disks.sort_title;
+ ```
+Show only UHD disks:
+```shell
+mysql> SELECT disks.title AS Title, disks.year AS Year, formats.name AS Format
+    -> FROM disks
+    -> INNER JOIN disk_formats ON disks.id = disk_formats.disk_id
+    -> INNER JOIN formats ON disk_formats.format_id = formats.id
+    -> WHERE disk_formats.format_id = 3
+    -> ORDER BY disks.sort_title;
+```
+
+## Appendix - Reset the Root Password
+**TODO** these commands seem to be out-of-date, fix me!
 
 ```shell
-sudo launchctl [un]load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist
-mysql> sudo mysqld_safe --skip-grant-tables;
+brew services stop mysql
+sudo mysqld_safe --skip-grant-tables &
 mysql> UPDATE mysql.user SET authentication_string=null WHERE User='root';
 mysql> FLUSH PRIVILEGES;
 ```
 
-## Backing Up
-*TODO* document how to create `disks-mysqldump.sql`.
+Quit and resume.
+
+```shell
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'NEW_PASSWORD';
+```
 
 
 ## Appendix - James Bond Films
