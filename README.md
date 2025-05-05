@@ -25,19 +25,18 @@ Create the schema:
 mysql -uroot -p < VisualDiscsDatabase.sql
 ```
 
-Connect to the database and view the tables:
-```shell
-mysql -uroot -p disks
-SHOW tables;
-```
-
 Backing up the database to a file:
 ```shell
 mysqldump -u root -p disks > disks-dump.sql
 ```
 
 ## Sample Queries
-Connect to the database (as above).
+
+Connect to the database and view the tables:
+```shell
+mysql -uroot -p disks
+SHOW tables;
+```
 
 Summary of the entire collection (title, year, rating, format):
 ```shell
