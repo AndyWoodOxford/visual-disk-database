@@ -36,20 +36,20 @@ SHOW tables;
 Summary of the entire collection (title, year, rating, format):
 ```shell
 mysql> SELECT disks.title AS Title, disks.year AS Year, classifications.name AS Rating, formats.name AS Format
-    -> FROM disks
-    -> INNER JOIN disk_classifications ON disks.id = disk_classifications.disk_id
-    -> INNER JOIN classifications ON disk_classifications.classification_id = classifications.id
-    -> INNER JOIN disk_formats ON disks.id = disk_formats.disk_id INNER JOIN formats ON disk_formats.format_id = formats.id
-    -> ORDER BY disks.sort_title;
+   FROM disks
+    INNER JOIN disk_classifications ON disks.id = disk_classifications.disk_id
+    INNER JOIN classifications ON disk_classifications.classification_id = classifications.id
+    INNER JOIN disk_formats ON disks.id = disk_formats.disk_id INNER JOIN formats ON disk_formats.format_id = formats.id
+    ORDER BY disks.sort_title;
  ```
 Show only UHD disks:
 ```shell
 mysql> SELECT disks.title AS Title, disks.year AS Year, formats.name AS Format
-    -> FROM disks
-    -> INNER JOIN disk_formats ON disks.id = disk_formats.disk_id
-    -> INNER JOIN formats ON disk_formats.format_id = formats.id
-    -> WHERE disk_formats.format_id = 3
-    -> ORDER BY disks.sort_title;
+    FROM disks
+    INNER JOIN disk_formats ON disks.id = disk_formats.disk_id
+    INNER JOIN formats ON disk_formats.format_id = formats.id
+    WHERE disk_formats.format_id = 3
+    ORDER BY disks.sort_title;
 ```
 
 ## Appendix - Reset the Root Password
