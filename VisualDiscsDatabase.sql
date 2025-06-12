@@ -267,7 +267,7 @@ CALL disks.create_disk('James Bond - No Time To Die', 'James Bond 26', 'Cary Joj
 CALL disks.create_disk('Jurassic Park', 'Jurassic Park 1', 'Steven Spielberg', 1993, 1, 'Film', 'PG', 'Blu-Ray');
 CALL disks.create_disk('The Lost World: Jurassic Park', 'Jurassic Park 2', 'Steven Spielberg', 1997, 1, 'Film', 'PG', 'Blu-Ray');
 CALL disks.create_disk('Jurassic Park III', 'Jurassic Park 3', 'Joe Johnston', 2003, 1, 'Film', 'PG', 'Blu-Ray');
-CALL disks.create_disk('Jarassic World', 'Jurassic Park 4', 'Colin Trevorrow', 2015, 1, 'Film', '12', 'Blu-Ray');
+CALL disks.create_disk('Jurassic World', 'Jurassic Park 4', 'Colin Trevorrow', 2015, 1, 'Film', '12', 'Blu-Ray');
 CALL disks.create_disk('Jurassic World: Fallen Kingdom', 'Jurassic Park 5', 'J. A. Bayona', 2018, 2, 'Film', '12', 'Blu-Ray');
 CALL disks.create_disk('Jurassic World: Fallen Kingdom', 'Jurassic Park 5', 'J. A. Bayona', 2018, 2, 'Film', '12', '4K Ultra HD');
 CALL disks.create_disk('Kill Bill: Volume 1', 'Kill Bill: Volume 1', 'Quentin Tarantino', 2003, 1, 'Film', '18', 'DVD');
