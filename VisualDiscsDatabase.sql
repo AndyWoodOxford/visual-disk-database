@@ -386,4 +386,4 @@ CALL disks.create_disk('War of the Worlds', 'War of the Worlds', 'Steven Spielbe
 CALL disks.add_note('James Bond - Never Say Never Again', 'German edition ("Sag Niemals Nie") - with original English language option');
 CALL disks.add_note('James Bond - Licence to Kill', 'Disc maybe dodgy, pauses occasionally');
 CALL disks.add_note('South Park - Complete Series 3', 'An episode on Volume 11 causes the 18 rating');
-CALL disks.add_note('The Day of the Jackal', 'Audio soundtrack is 1.0, i.e. mono through th centre speaker');
+CALL disks.add_note('The Day of the Jackal', 'Audio soundtrack is 1.0, i.e. mono through a centre speaker');
