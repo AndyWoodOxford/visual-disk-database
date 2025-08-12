@@ -206,7 +206,7 @@ CALL disks.create_disk('Die Hard - Die Hard 4.0', 'Die Hard 4', 'Len Wiseman', 2
 CALL disks.create_disk('Die Hard - A Good Day to Die Hard', 'Die Hard 5', 'John Moore', 2013, 0, 1, 'Film', '15', 'Blu-Ray');
 CALL disks.create_disk('Die Hard - Decoding Die Hard (bonus disk)', 'Die Hard Bonus', 'N/A', 2013, 0, 1, 'Film', '15', 'Blu-Ray');
 CALL disks.create_disk('Dune', 'Dune', 'David Lynch', 1984, 0, 1, 'Film', '15', 'DVD');
-CALL disks.create_disk('Evita', 'Evita', 'Alan Parker', 1996, 0, 1, 'Film', 'PG', 'DVD');
+CALL disks.create_disk('Evita', 'Evita', 'Alan Parker', 1996, 129, 1, 'Film', 'PG', 'DVD');
 CALL disks.create_disk('Family Guy - Season Six (Disk Two)', 'Family Guy - Season Six (Disk Two)', 'n/a', 2007, 0, 1, 'TV Series', '15', 'DVD');
 CALL disks.create_disk('Family Guy - Season Six (Special Features)', 'Family Guy - Season Six (Special Features)', 'n/a', 2007, 0, 1, 'Bonus Material', '15', 'DVD');
 CALL disks.create_disk('Family Guy - Blue Harvest', 'Family Guy - Blue Harvest', 'Dominic Polcino, Peter Shin', 2007, 0, 2, 'Film', '15', 'DVD');
