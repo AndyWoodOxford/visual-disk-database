@@ -44,6 +44,7 @@ mysql> SELECT disks.title AS Title, categories.name AS Type, disks.year AS Year,
     INNER JOIN disk_formats ON disks.id = disk_formats.disk_id INNER JOIN formats ON disk_formats.format_id = formats.id
     ORDER BY disks.sort_title;
  ```
+
 Show only UHD disks:
 ```shell
 mysql> SELECT disks.title AS Title, disks.year AS Year, formats.name AS Format
@@ -51,6 +52,18 @@ mysql> SELECT disks.title AS Title, disks.year AS Year, formats.name AS Format
     INNER JOIN disk_formats ON disks.id = disk_formats.disk_id
     INNER JOIN formats ON disk_formats.format_id = formats.id
     WHERE disk_formats.format_id = 3
+    ORDER BY disks.sort_title;
+```
+
+Show disks that have runtimes over over two hours (TODO exclude TV series):
+```shell
+mysql> SELECT disks.title AS Title, classifications.name AS Rating, formats.name AS Format, disks.duration AS Duration
+    FROM disks
+    INNER JOIN disk_formats ON disks.id = disk_formats.disk_id
+    INNER JOIN formats ON disk_formats.format_id = formats.id
+    INNER JOIN disk_classifications ON disks.id = disk_classifications.disk_id
+    INNER JOIN classifications ON disk_classifications.classification_id = classifications.id
+    WHERE disks.duration > 120 
     ORDER BY disks.sort_title;
 ```
 
