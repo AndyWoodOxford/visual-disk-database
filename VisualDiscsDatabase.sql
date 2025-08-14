@@ -349,9 +349,9 @@ CALL disks.create_disk('The Sixth Sense', 'Sixth Sense', 'M. Night Shyamalan', 1
 CALL disks.create_disk('Sliding Doors', 'Sliding Doors', 'Peter Howitt', 1998, 95, 1, 'Film', '15', 'DVD');
 CALL disks.create_disk('Snatch', 'Snatch', 'Guy Ritchie', 2000, 99, 1, 'Film', '18', 'DVD');
 CALL disks.create_disk('South Park - Complete Series 1', 'South Park - Complete Series 1', 'Trey Parker, Matt Stone', 1999, 305, 3, 'TV Series', '15', 'DVD');
-CALL disks.create_disk('South Park - Complete Series 2', 'South Park - Complete Series 2', 'Trey Parker, Matt Stone', 2001, 0, 4, 'TV Series', '15', 'DVD');
-CALL disks.create_disk('South Park - Complete Series 3', 'South Park - Complete Series 3', 'Trey Parker, Matt Stone', 2000, 0, 4, 'TV Series', '18', 'DVD');
-CALL disks.create_disk('South Park - Complete Series 4', 'South Park - Complete Series 4', 'Trey Parker, Matt Stone', 2001, 0, 4, 'TV Series', '15', 'DVD');
+CALL disks.create_disk('South Park - Complete Series 2', 'South Park - Complete Series 2', 'Trey Parker, Matt Stone', 2001, 396, 4, 'TV Series', '15', 'DVD');
+CALL disks.create_disk('South Park - Complete Series 3', 'South Park - Complete Series 3', 'Trey Parker, Matt Stone', 2000, 378, 4, 'TV Series', '18', 'DVD');
+CALL disks.create_disk('South Park - Complete Series 4', 'South Park - Complete Series 4', 'Trey Parker, Matt Stone', 2001, 373, 4, 'TV Series', '15', 'DVD');
 CALL disks.create_disk('Spider-Man', 'Spider-Man 1', 'Sam Raimi', 2002, 121, 1, 'Film', '12', 'Blu-Ray');
 CALL disks.create_disk('Spider-Man 2', 'Spider-Man 2', 'Sam Raimi', 2004, 136, 1, 'Film', 'PG', 'Blu-Ray');
 CALL disks.create_disk('Spider-Man 3', 'Spider-Man 3', 'Sam Raimi', 2007, 139, 2, 'Film', '12', 'Blu-Ray');
