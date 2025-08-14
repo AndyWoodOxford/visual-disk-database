@@ -305,7 +305,9 @@ CALL disks.create_disk('Naked Gun - From the Files of Police Squad!', 'Naked Gun
 CALL disks.create_disk('Naked Gun - The Smell of Fear', 'Naked Gun 2', 'David Zucker', 1991, 82, 1, 'Film', '15', 'DVD');
 CALL disks.create_disk('Naked Gun - The Final Insult', 'Naked Gun 3', 'Peter Segal', 1994, 79, 1, 'Film', '15', 'DVD');
 CALL disks.create_disk('La Femme Nikita', 'Nikita', 'Luc Besson', 1990, 112, 1, 'Film', '18', 'DVD');
-CALL disks.create_disk('Ocean’s Eleven', 'Ocean’s Eleven', 'Steven Soderbergh', 2001, 112, 1, 'Film', '12', 'DVD');
+CALL disks.create_disk('Ocean’s Eleven', 'Ocean’s 1', 'Steven Soderbergh', 2001, 112, 1, 'Film', '12', 'Blu-Ray');
+CALL disks.create_disk('Ocean’s Twelve', 'Ocean’s 2', 'Steven Soderbergh', 2004, 120, 1, 'Film', '12', 'Blu-Ray');
+CALL disks.create_disk('Ocean’s Thirteen', 'Ocean’s 3', 'Steven Soderbergh', 2007, 117, 1, 'Film', '12', 'Blu-Ray');
 CALL disks.create_disk('The Passion of the Christ', 'Passion of the Christ', 'Mel Gibson', 2004, 121, 1, 'Film', '18', 'DVD');
 CALL disks.create_disk('Performance', 'Performance', 'Donald Cammell, Nicolas Roeg', 1970, 0, 1, 'Film', '18', 'DVD');
 CALL disks.create_disk('Pink Panther - The Pink Panther', 'Pink Panther 1', 'Blake Edwards', 1963, 0, 1, 'Film', 'PG', 'DVD');
