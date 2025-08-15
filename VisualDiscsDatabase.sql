@@ -325,6 +325,7 @@ CALL disks.create_disk('Pirates of the Caribbean - At World''s End', 'Pirates of
 CALL disks.create_disk('Pixar Short Films Collection Volume 1', 'Pixar Short Films Collection Volume 1', 'N/A', 2007, 51, 1, 'Bonus Material', 'U', 'Blu-Ray');
 CALL disks.create_disk('Planet Earth II', 'Planet Earth II', 'N/A', 2016, 342, 2, 'TV Series', 'PG', 'Blu-Ray');
 CALL disks.create_disk('Planet Earth II', 'Planet Earth II', 'N/A', 2016, 300, 2, 'TV Series', 'PG', '4K Ultra HD');
+CALL disks.create_disk('Police Squad!', 'Police Squad', 'N/A', 1982, 144, 1, 'TV Series', 'PG', 'DVD');
 CALL disks.create_disk('Prometheus', 'Prometheus', 'Ridley Scott', 2012, 118, 1, 'Film', '15', 'DVD');
 CALL disks.create_disk('Pulp Fiction', 'Pulp Fiction', 'Quentin Tarantino', 1994, 148, 1, 'Film', '18', 'DVD');
 CALL disks.create_disk('Ratatouille', 'Ratatouille', 'Brad Bird', 2007, 110, 1, 'Film', 'PG', 'Blu-Ray');
