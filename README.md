@@ -33,9 +33,9 @@ mysql -u root -p disks
 SHOW tables;
 ```
 
-Summary of the entire collection (title, category, year, rating, format):
+Summary of the entire collection (title, category, year, duration, rating, format):
 ```shell
-mysql> SELECT disks.title AS Title, categories.name AS Type, disks.year AS Year, classifications.name AS Rating, formats.name AS Format
+mysql> SELECT disks.title AS Title, categories.name AS Type, disks.year AS Year, disks.duration as Minutes, classifications.name AS Rating, formats.name AS Format
     FROM disks
     INNER JOIN disk_categories ON disks.id = disk_categories.disk_id
     INNER JOIN categories ON disk_categories.category_id = categories.id
