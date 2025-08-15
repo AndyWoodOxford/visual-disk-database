@@ -1,2 +1,5 @@
+# Filesystem
+*.swp
+
 # IDE
 .idea
